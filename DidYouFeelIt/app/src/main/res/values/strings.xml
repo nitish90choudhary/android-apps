@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DidYouFeelIt</string>
+    <string name="perceived_strength">Perceived Strength</string>
+    <string name="num_people_felt_it"> People felt it</string>
+</resources>
