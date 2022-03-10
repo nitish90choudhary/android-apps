@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">बस जावा</string>
+    <string name="order">आदेश</string>
+    <string name="chocolate">चॉकलेट</string>
+    <string name="summary">आदेश सारांश</string>
+    <string name="quantity">मात्रा</string>
+    <string name="thank_you">धन्यवाद!!</string>
+    <string name="toppings">टॉपिंग</string>
+    <string name="whipping_cream">फेटी हुई मलाई</string>
+</resources>

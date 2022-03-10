@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTxtName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Name" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:padding="8dp"
+                android:text="@string/toppings"
+                android:textColor="@android:color/black" />
+
+            <CheckBox
+                android:id="@+id/chbx_whipped_cream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/whipping_cream" />
+
+            <CheckBox
+                android:id="@+id/chbx_chocolate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chocolate" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:padding="8dp"
+                android:text="@string/quantity"
+                android:textColor="@android:color/black" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="minusOne"
+                    android:padding="5dp"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/txtView_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="plusOne"
+                    android:padding="5dp"
+                    android:text="+" />
+
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:padding="8dp"
+                android:text="@string/summary"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtView_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="$0" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="submitOrder"
+                android:padding="8dp"
+                android:text="@string/order"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
